@@ -34,7 +34,7 @@ def change_smth_in_note():
         print('Введите новые данные: ')
         for i in range(len(lst)):
             if lst[i].split(',')[0] == id:
-                lst[i] = id + "," + add_name_note()  
+                lst[i] = id + "," + change_name_note()  
     with open("note.csv", "w", encoding="UTF-8") as file:
         for row in lst:
             file.write(row)

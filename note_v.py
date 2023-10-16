@@ -29,11 +29,12 @@ def input_want_to_find():
     char = input("Введите слово поиска:\n")
     return char
 
-def change_name_phone():
+def change_name_note():
     name = input('Введите имя: ')
-    surname = input('Ввелите фамилию: ')
-    tel = input('Введите номер телефона: ')
-    res =name + "," + surname + ',' + tel + '\n' 
+    nnote = input('Ввелите фамилию: ')
+    cr_date = date.today().strftime("%Y-%m-%d")
+    cr_time = datetime.now().time().strftime("%H:%M:%S")
+    res =name + "," + nnote + ',' + cr_date + ',' + cr_time + '\n' 
     return res
 
 def input_sort_option():
