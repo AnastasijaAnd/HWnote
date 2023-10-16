@@ -10,21 +10,18 @@ def main():
             write_name(res)
             print('Успешно записано\n')
         if num == 2:
-            print('Заметки:\n')
+            print('Все заметки:\n')
             all_note()    
         if num == 3:
-            print(*search_smth_in_note())
-            print('Успешно найдено\n')
+            print(*search_smth_in_note(), sep= "; ")
+            print('Поиск закончен\n')
         if num == 4:
             change_smth_in_note()
             print('Успешно изменено\n')
         if num == 5:
             delete_smth_in_note()
             print('Успешно удалено\n')
-        if num == 6:
-            sort_note()
-            print('Успешно отсортировано\n')
-        if num == 6:
+        if num == 7:
             with open("note.csv", "w", encoding="UTF-8") as file:
                 file.write('')
             print('Все заметки удалены успешно\n')
